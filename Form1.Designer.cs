@@ -43,6 +43,7 @@
             chkCola = new CheckBox();
             chkPotato = new CheckBox();
             grpOrder = new GroupBox();
+            lblErrorMsg = new Label();
             btnReset = new Button();
             btnOrder = new Button();
             lblTotalCost = new Label();
@@ -223,6 +224,7 @@
             // 
             // grpOrder
             // 
+            grpOrder.Controls.Add(lblErrorMsg);
             grpOrder.Controls.Add(btnReset);
             grpOrder.Controls.Add(btnOrder);
             grpOrder.Controls.Add(lblTotalCost);
@@ -231,10 +233,20 @@
             grpOrder.ForeColor = Color.Firebrick;
             grpOrder.Location = new Point(495, 82);
             grpOrder.Name = "grpOrder";
-            grpOrder.Size = new Size(225, 260);
+            grpOrder.Size = new Size(240, 290);
             grpOrder.TabIndex = 3;
             grpOrder.TabStop = false;
             grpOrder.Text = "주문 내역";
+            // 
+            // lblErrorMsg
+            // 
+            lblErrorMsg.AutoSize = true;
+            lblErrorMsg.Font = new Font("맑은 고딕", 9F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Location = new Point(20, 201);
+            lblErrorMsg.Name = "lblErrorMsg";
+            lblErrorMsg.Size = new Size(0, 15);
+            lblErrorMsg.TabIndex = 4;
             // 
             // btnReset
             // 
@@ -242,7 +254,7 @@
             btnReset.FlatStyle = FlatStyle.Flat;
             btnReset.Font = new Font("맑은 고딕", 11F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(118, 211);
+            btnReset.Location = new Point(132, 236);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(82, 35);
             btnReset.TabIndex = 3;
@@ -256,7 +268,7 @@
             btnOrder.FlatStyle = FlatStyle.Flat;
             btnOrder.Font = new Font("맑은 고딕", 11F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnOrder.ForeColor = Color.White;
-            btnOrder.Location = new Point(20, 211);
+            btnOrder.Location = new Point(20, 236);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(82, 35);
             btnOrder.TabIndex = 2;
@@ -282,7 +294,7 @@
             lstOrder.FormattingEnabled = true;
             lstOrder.Location = new Point(20, 35);
             lstOrder.Name = "lstOrder";
-            lstOrder.Size = new Size(180, 124);
+            lstOrder.Size = new Size(194, 124);
             lstOrder.TabIndex = 0;
             // 
             // Form1
@@ -290,7 +302,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(760, 380);
+            ClientSize = new Size(760, 390);
             Controls.Add(grpOrder);
             Controls.Add(grpOption);
             Controls.Add(grpMenu);
@@ -331,5 +343,6 @@
         private Label lblTotalCost;
         private Button btnOrder;
         private Button btnReset;
+        private Label lblErrorMsg;
     }
 }
