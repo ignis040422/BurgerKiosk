@@ -60,7 +60,7 @@ namespace BurgerKiosk
 
             lblTotalCost.Text = "총 금액: " + totalCost + "원";
         }
-
+        //버거 리스트 체크 
         private void btnReset_Click(object sender, EventArgs e)
         {
             rdoHamBurger.Checked = false;
