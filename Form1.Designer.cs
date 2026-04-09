@@ -246,7 +246,7 @@
             lblErrorMsg.Location = new Point(20, 201);
             lblErrorMsg.Name = "lblErrorMsg";
             lblErrorMsg.Size = new Size(0, 15);
-            lblErrorMsg.TabIndex = 4;
+            lblErrorMsg.TabIndex = 2;
             // 
             // btnReset
             // 
@@ -257,7 +257,7 @@
             btnReset.Location = new Point(132, 236);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(82, 35);
-            btnReset.TabIndex = 8;
+            btnReset.TabIndex = 4;
             btnReset.Text = "초기화";
             btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
@@ -271,7 +271,7 @@
             btnOrder.Location = new Point(20, 236);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(82, 35);
-            btnOrder.TabIndex = 7;
+            btnOrder.TabIndex = 3;
             btnOrder.Text = "주문하기";
             btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
