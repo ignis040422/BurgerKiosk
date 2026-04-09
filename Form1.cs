@@ -8,6 +8,36 @@ namespace BurgerKiosk
         public Form1()
         {
             InitializeComponent();
+
+            // Enter 키를 누르면 주문하기 버튼이 실행되도록 설정
+            this.AcceptButton = btnOrder;
+
+            // Esc 키를 누르면 초기화 버튼이 실행되도록 설정
+            this.CancelButton = btnReset;
+
+            // Tab 키 이동 순서를 설정
+            SetTabOrder();
+        }
+
+        // 키보드 Tab 이동 순서를 설정하는 함수
+        private void SetTabOrder()
+        {
+            int tabIndex = 0;
+
+            // 메뉴 선택 영역
+            rdoHamBurger.TabIndex = tabIndex++;
+            rdoBulgogiBurger.TabIndex = tabIndex++;
+            rdoChickenBurger.TabIndex = tabIndex++;
+
+            // 추가 옵션 영역
+            chkPotato.TabIndex = tabIndex++;
+            chkCola.TabIndex = tabIndex++;
+            chkCheese.TabIndex = tabIndex++;
+            chkSauce.TabIndex = tabIndex++;
+
+            // 버튼 영역
+            btnOrder.TabIndex = tabIndex++;
+            btnReset.TabIndex = tabIndex++;
         }
 
         private void btnOrder_Click(object sender, EventArgs e)

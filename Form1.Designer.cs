@@ -257,7 +257,7 @@
             btnReset.Location = new Point(132, 236);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(82, 35);
-            btnReset.TabIndex = 3;
+            btnReset.TabIndex = 8;
             btnReset.Text = "초기화";
             btnReset.UseVisualStyleBackColor = false;
             btnReset.Click += btnReset_Click;
@@ -271,7 +271,7 @@
             btnOrder.Location = new Point(20, 236);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(82, 35);
-            btnOrder.TabIndex = 2;
+            btnOrder.TabIndex = 7;
             btnOrder.Text = "주문하기";
             btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
